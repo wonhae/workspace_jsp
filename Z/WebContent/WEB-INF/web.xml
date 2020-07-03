@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Z</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  	<servlet>
+  		<servlet-name>mys1</servlet-name>
+  		<servlet-class>com.naver.MyServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet>
+  		<servlet-name>mys2</servlet-name>
+  		<servlet-class>com.naver.MyServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+  		<servlet-name>mys1</servlet-name>
+  		<url-pattern>/mys1</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet-mapping>
+  		<servlet-name>mys2</servlet-name>
+  		<url-pattern>/mys2</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>yours</servlet-name>
+  		<servlet-class>com.naver.YourServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+  		<servlet-name>yours</servlet-name>
+  		<url-pattern>/yours</url-pattern>
+  	</servlet-mapping>
+  	
+</web-app>
